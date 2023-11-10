@@ -233,10 +233,26 @@ h5 {
   height: 62px;
 }
 
+.whatsapp-icon {
+  width: 48px;
+  height: 48px;
+}
+
 .red-button {
   background: linear-gradient(0deg, #E42313, #E42313);
   border: 1px solid #961206;
   box-shadow: 0px 4px 8px 0px #FF736C;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  gap: 10px;
+  min-width: 152px;
+}
+
+.red-button-no-shadow {
+  background: #E42313;
+  border: 0px;
   color: #FFFFFF;
   padding: 10px 30px;
   border-radius: 10px;
@@ -250,6 +266,22 @@ h5 {
   border: 1px solid #E42313;
   color: #E42313;
   padding: 16px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  gap: 10px;
+  min-width: 152px;
+}
+
+.gray-button {
+  background: #f5f5f9;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 16px;
+  color: #212121;
+  border: 0px;
+  padding: 10px 30px;
   border-radius: 10px;
   font-size: 16px;
   gap: 10px;
@@ -280,4 +312,36 @@ h5 {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 75px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.wide-card {
+  background-color: #f5f5f9;
+  width: 100%;
+  padding: 20px;
+  border: 0px;
+}
+
+.small-card {
+  background-color: #f5f5f9;
+  border: 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.small-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.wide-icon {
+  width: 160px;
+}
+
+.btn-primary:hover {
+  background-color: #961206;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=layanan.css.map */

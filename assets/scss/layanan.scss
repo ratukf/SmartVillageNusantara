@@ -1,0 +1,44 @@
+@import 'style';
+@mixin wide-card {
+    background-color: $graybg;
+    width: 100%;
+    padding: 20px;
+    border: 0px;
+}
+
+@mixin small-card {
+    background-color: $graybg;
+    border: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin small-icon {
+    width: 56px;
+    height: 56px;
+}
+
+.wide-card {
+    @include wide-card;
+}
+
+.small-card {
+    @include small-card;
+}
+
+.small-icon {
+    @include small-icon;
+}
+
+.wide-icon {
+    width: 160px;
+}
+
+.btn-primary:hover {
+    background-color: $maroon;
+}
+
+.hidden {
+    display: none;
+}

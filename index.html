@@ -7,13 +7,13 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/scss/index.css">
-    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!--    NAVBAR     -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
         <div class="container col-md-10">
             <a class="navbar-brand" href="index.html">
                 <img class="logo" src="assets/images/logos/smart_village_nusantara.png">
@@ -61,22 +61,22 @@
         <div class="container-fluid col-md-11">
             <div class="row">
                 <div class="col-md-3">
-                    <img class="about-icon" src="assets/images/icons/type=ST1.png" alt="350++ Desa Terdigitalisasi">
+                    <img class="about-icon" src="assets/images/icons/type=ST 1.png" alt="350++ Desa Terdigitalisasi">
                     <h1>350++</h1>
                     <h5>Desa Terdigitalisasi</h5>
                 </div>
                 <div class="col-md-3">
-                    <img class="about-icon" src="assets/images/icons/type=ST2.png" alt="22 Sebaran Provinsi">
+                    <img class="about-icon" src="assets/images/icons/type=ST 2.png" alt="22 Sebaran Provinsi">
                     <h1>22</h1>
                     <h5>Sebaran Provinsi</h5>
                 </div>
                 <div class="col-md-3">
-                    <img class="about-icon" src="assets/images/icons/type=ST3.png" alt="6.000++ Warga Desa Tergabung">
+                    <img class="about-icon" src="assets/images/icons/type=ST 3.png" alt="6.000++ Warga Desa Tergabung">
                     <h1>6.000++</h1>
                     <h5>Warga Desa Tergabung</h5>
                 </div>
                 <div class="col-md-3">
-                    <img class="about-icon" src="assets/images/icons/type=ST4.png"
+                    <img class="about-icon" src="assets/images/icons/type=ST 4.png"
                         alt="8,4 Miliar++ Transaksi UMKM dan MitraBumdes">
                     <h1>8,4 Miliar++</h1>
                     <h5>Transaksi UMKM dan MitraBumdes</h5>
@@ -305,57 +305,9 @@
             <h1>Berita <span class="red-header">Smart Village Nusantara</span></h1>
             <p class="body-xl">Baca berita terkini seputar Smart Village Nusantara</p>
         </div>
-        <div class="container">
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="assets/images/illustrations/Group 14.png" alt=""
-                                    class="img-fluid card-img-top">
-                                <h5>Covid19</h5>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                <p>Exercitation nisi in culpa deserunt proident nisi id culpa incididunt cupidatat.
-                                    Tempor deserunt aliquip enim labore duis est. Ex dolor ut tempor labore. Ut minim
-                                    cupidatat Lorem dolor commodo. Irure fugiat sint in eu. Deserunt sint laborum aute
-                                    cupidatat deserunt exercitation et ex consectetur consectetur.</p>
-                                <p>26 Agustus 2021</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body d-flex justify-content-between">
-                                <img src="assets/images/illustrations/Group 14.png" alt="" class="img-fluid ">
-                                <div class="text">
-                                    <h5>Berita</h5>
-                                    <h2>Fugiat dolor eu quis aute commodo id dolore adipisicing ea ullamco.</h2>
-                                    <p>26 Agustus 2021</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="card">
-                            <h1>berita ketiga</h1>
-                        </div>
-                        <div class="card">
-                            <h1>berita keempat</h1>
-                        </div>
-                        <div class="card">
-                            <h1>berita kelima</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
         <div class="text-center mt-5">
             <button class="white-button label-wmd-l">Berita Selengkapnya</button>
         </div>
-
-
     </div>
 
     <!--     INSTAGRAM     -->
@@ -366,7 +318,7 @@
     </div>
 
     <!--     FOOTER     -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class=" col-md-11">
@@ -394,7 +346,21 @@
 
     <!--     COPYRIGHT     -->
     <div class="copyright d-flex align-items-center justify-content-center" style="height: 40px;">
-        <p class="label-wr-s mb-0" style="color: #ffffff">2020, Smart Village Nusantara. Hak Cipta Dilindungi</p>
+        <p class="label-wr-s mb-0" style="color: #ffffff">&copy; 2020, Smart Village Nusantara. Hak Cipta Dilindungi</p>
+    </div>
+
+    <!--     WHATSAPP     -->
+    <div class="whatsapp-button" id="whatsapp-button">
+        <a class="d-flex flex-column align-items-end" href="https://wa.me/6282215158981" target="_blank">
+            <span class="label-wr-l mb-4">Butuh bantuan?</span>
+            <div class="icon-container d-flex position-relative align-items-center">
+                <div class="icon-bg"></div>
+                <div class="ellipse-1">
+                    <div class="ellipse-2"></div>
+                </div>
+                <img class="whatsapp-icon" src="assets/images/icons/whatsapp.png" alt="WhatsApp Icon">
+            </div>
+        </a>
     </div>
 
     <!--    JAVASCRIPT     -->
@@ -405,5 +371,4 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

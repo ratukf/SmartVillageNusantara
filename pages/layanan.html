@@ -4,15 +4,519 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layanan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/scss/layanan.css">
-    <link rel="stylesheet" href="assets/scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/layanan.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
+    <!--    NAVBAR     -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
+        <div class="container col-md-10">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../assets/images/logos/smart_village_nusantara.png">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link label-wr-l" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link label-wr-l" href="pages/layanan.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link label-wr-l" href="#">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="red-button nav-link label-wmd-l" onclick="location.href='#'">Coba
+                            Layanan</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-
+    <!--     PRODUK LAYANAN      -->
+    <div class="produk-layanan mt-5 mb-5">
+        <div class="container col-md-10">
+            <div class="row">
+                <div class="col mt-5">
+                    <h3 class="mt-3 mb-3">Produk Layanan</h3>
+                    <div class="container layanan-container p-0 m-0">
+                        <div class="mb-2">
+                            <button type="button" class="btn btn-primary gray-button mb-2" id="button1">Smart Government</button>
+                            <button type="button" class="btn btn-primary gray-button mb-2" id="button2">Smart Economy</button>
+                            <button type="button" class="btn btn-primary gray-button mb-2" id="button3">Smart Society</button>
+                            <button type="button" class="btn btn-primary gray-button mb-2" id="button4">Infrastructure</button>
+                        </div>
+                        <div class="content-container">
+                            <!--     SMART GOVERNMENT     -->
+                            <div class="hidden" id="content1">
+                                <div class="card wide-card mb-5">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-md-7">
+                                            <h3>Smart Government</h3>
+                                            <p class="body-l">Akses ke semua layanan untuk proses administrasi dan pelayanan publik yang lebih efisien.</p>
+                                        </div>
+                                        <div class="col-md-3 end-0">
+                                            <img class="wide-icon" src="../assets/images/icons/Icon=Smart Government.png" alt="Smart Government">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container p-0 m-0">
+                                    <div class="row">
     
+                                        <!-- Card 1 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=Simpeldesa.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>SimpelDesa</h3>
+                                                        <p class="body-m">Aplikasi pusat data warga yang dirancang untuk basis data terpadu warga desa.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 2 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=PortalDesa.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Portal Desa</h3>
+                                                        <p class="body-m">Portal berisi informasi dari desa-desa yang mengimplementasikan layanan solusi Smart Village Nusantara.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 3 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=eMonev.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>eMonvev</h3>
+                                                        <p class="body-m">Layanan yang mempermudah monitoring dan evaluasi untuk melaporkan perkembangan kegiatan suatu instansi pada Smart Village Nusantara.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 4 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=DashboardDesa.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Dashboard Desa</h3>
+                                                        <p class="body-m">Layanan yang menyajikan grafik dan data dari profil desa yang menerapkan Smart Village Nusantara.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <!-- Card 5 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=UCM.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>UCM</h3>
+                                                        <p class="body-m">Anda dapat menghubungkan dan mengintegrasikan berbagai layanan Smart Village Nusantara yang digunakan.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--     SMART ECONOMY     -->
+                            <div class="hidden" id="content2">
+                                <div class="card wide-card mb-5">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-md-7">
+                                            <h3>Smart Economy</h3>
+                                            <p class="body-l">Kemudahan akses untuk memasarkan berbagai produk unggulan desa.</p>
+                                        </div>
+                                        <div class="col-md-3 end-0">
+                                            <img class="wide-icon" src="../assets/images/icons/Icon=Smart Economy.png" alt="Smart Economy">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container p-0 m-0">
+                                    <div class="row">
+                                        <!-- Card 1 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=iKas.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>iKas</h3>
+                                                        <p class="body-m">Membantu para pengusaha mikro mengelola bisnisnya dengan mudah dan cepat langsung dari smartphone.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 2 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=GrosirDesa.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Grosir Desa</h3>
+                                                        <p class="body-m">Layanan ini memberikan solusi dalam membantu masyarakat desa dalam memasarkan produk, mengurangi rantai distribusi untuk menjaga ketersediaan barang, harga yang kompetitif.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 3 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=pasarDesa.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Pasar Desa</h3>
+                                                        <p class="body-m">Layanan yang membantu mengelola usaha, mengembangkan investasi, menyediakan jasa, dan jenis usaha lainnya untuk kesejahteraan masyarakat desa.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 4 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=eLok.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>eLok</h3>
+                                                        <p class="body-m">Layanan sistem digitalisasi proses karcis dan tiket wisata pada masing-masing area wisata di desa Smart Village Nusantara.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--     SMART SOCIETY     -->
+                            <div class="hidden" id="content3">
+                                <div class="card wide-card mb-5">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-md-7">
+                                            <h3>Smart Society</h3>
+                                            <p class="body-l">Kemudahan akses layanan sosial untuk meningkatkan kualitas warga desa.</p>
+                                        </div>
+                                        <div class="col-md-3 end-0">
+                                            <img class="wide-icon" src="../assets/images/icons/Icon=Smart Society.png" alt="Smart Society">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container p-0 m-0">
+                                    <div class="row">
+                                        <!-- Card 1 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=ePosyandu.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>ePosyandu</h3>
+                                                        <p class="body-m">Membantu Posyandu digitalisasi data yang terintegrasi dengan Puskesmas dan Dinas Kesehatan Kota/Kabupaten.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 2 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=BioskopDesa.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Bioskop Desa</h3>
+                                                        <p class="body-m">Membantu untuk mendistribusikan berbagai film, video, dan media hiburan lainnya sehingga dapat dinikmati oleh masyarakat desa.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 3 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=eLibrary.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>eLibrary</h3>
+                                                        <p class="body-m">Fasilitas layanan yang dapat membantu mengakses koleksi buku dan bacaan lainnya untuk mendukung perkembangan kualitas masyarakat desa.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Card 4 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=eLAMOS.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>ELAMOS</h3>
+                                                        <p class="body-m">ELAMOS (Earthquake Alert and Monitoring System) adalah perpanjangan dari sistem yang ada (InaTEWS), sehingga pengumuman dapat didengar oleh masyarakat yang berada di dalam ruangan.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 5 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=cctv.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>CCTV & Speaker</h3>
+                                                        <p class="body-m">Layanan yang membantu untuk memantau kondisi keamanan di lokasi penting seperti pasar, masjid, stasiun, taman, dan tempat wisata.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 6 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=panicButton.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Panic Button</h3>
+                                                        <p class="body-m">Solusi berbasis aplikasi smartphone untuk masyarakat yang dirancang sebagai alarm dalam memberikan pesan darurat ketika ada suatu keadaan bahaya.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 7 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=SmartWaterLevel.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Smart Water Level</h3>
+                                                        <p class="body-m">Membantu meminimalisir kerusakan yang disebabkan bencana alam dengan melakukan mitigasi bencana</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 8 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=SmartEnvironment.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Smart Environtment</h3>
+                                                        <p class="body-m">Menyediakan sistem interaktif bagi pemerintah daerah dalam memberikan kenyamanan dan rasa aman bagi masyarakatnya.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden" id="content4">
+                                <div class="card wide-card mb-5">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-md-7">
+                                            <h3>Infrastructure</h3>
+                                            <p class="body-l">Pengelolaan fasilitas pendukung desa agar terjaga dan tepat guna.</p>
+                                        </div>
+                                        <div class="col-md-3 end-0">
+                                            <img class="wide-icon" src="../assets/images/icons/Icon=Infrastructure.png" alt="Smart Society">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container p-0 m-0">
+                                    <div class="row">
+                                        <!-- Card 1 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=TSATZone.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>TSAT Zone</h3>
+                                                        <p class="body-m">Menyediakan layanan WiFi dalam suatu area yang luas dengan sumber internet yang cepat.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 2 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=VSATIP.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>VSAT IP</h3>
+                                                        <p class="body-m">Layanan internet berbasis satelit yang dapat melayani kebutuhan komunikasi data mulai dari 2.4 Kbps hingga 2 Mbps.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 3 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=tower.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Guyed Mast Triangle Tower</h3>
+                                                        <p class="body-m">Menyediakan tower komunikasi yang tersertifikasi menghasilkan kualitas</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 4 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=SmartPole.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Command Center</h3>
+                                                        <p class="body-m">Layanan dalam mengelola jaringan akses dengan pengendalian yang terintegrasi secara digital.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 5 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card small-card py-4 px-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img class="small-icon" src="../assets/images/icons/Icon=SmartPole.png" class="card-img" alt="Image">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h3>Smart Pole</h3>
+                                                        <p class="body-m">Fasilitas tiang cerdas yang memiliki berbagai fungsi di antaranya penerangan jalan, penyediaan wifi, CCTV, deteksi genangan banjir, sensor kualitas udara, dan tombol darurat.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--     FOOTER     -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class=" col-md-11">
+                    <div class="row d-flex justify-content-between align-items-center pt-5">
+                        <div class="col-md-5 d-flex flex-md-row flex-column">
+                            <div class="mb-3 mb-md-0">
+                                <img src="../assets/images/logos/smart_city_nusantara.png" alt="Smart City Nusantara">
+                            </div>
+                            <div>
+                                <h5 style="color: #ffffff">Telkom Living Lab Smart City Nusantara</h5>
+                                <p class="body-m" style="color: #ffffff">Jl. Gunung Sahari Raya No. 53, Jakarta
+                                    Pusat<br>Living Lab Smart City Nusantara</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <p class="label-wmd-xl" style="color: #ffffff">Contact Us</p>
+                            <p class="body-m" style="color: #ffffff">support@svntelkom.com</p>
+                            <p class="body-m" style="color: #ffffff">021 - 5555 6666</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--     COPYRIGHT     -->
+    <div class="copyright d-flex align-items-center justify-content-center" style="height: 40px;">
+        <p class="label-wr-s mb-0" style="color: #ffffff">&copy; 2020, Smart Village Nusantara. Hak Cipta Dilindungi</p>
+    </div>
+
+    <!--     WHATSAPP     -->
+    <div class="whatsapp-button" id="whatsapp-button">
+        <a class="d-flex flex-column align-items-end" href="https://wa.me/6282215158981" target="_blank">
+            <span class="label-wr-l mb-4">Butuh bantuan?</span>
+            <div class="icon-container d-flex position-relative align-items-center">
+                <div class="icon-bg"></div>
+                <div class="ellipse-1">
+                    <div class="ellipse-2"></div>
+                </div>
+                <img class="whatsapp-icon" src="../assets/images/icons/whatsapp.png" alt="WhatsApp Icon">
+            </div>
+        </a>
+    </div>
+
+
     <!--    JAVASCRIPT     -->
+    <script src="../assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

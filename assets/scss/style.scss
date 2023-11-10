@@ -386,6 +386,15 @@ $logo-size: 50px;
     @include about-icon;
 }
 
+@mixin whatsapp-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.whatsapp-icon {
+    @include whatsapp-icon;
+}
+
 // Pengaturan button
 .red-button {
     background: linear-gradient(0deg, $red, $red);
@@ -399,11 +408,33 @@ $logo-size: 50px;
     min-width: 152px;
 }
 
+.red-button-no-shadow {
+    background: $red;
+    border: 0px;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    gap: 10px;
+    min-width: 152px;
+}
+
 .white-button {
     background: $white;
     border: 1px solid $red;
     color: $red;
     padding: 16px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    gap: 10px;
+    min-width: 152px;
+}
+
+.gray-button {
+    background: $graybg;
+    @include label-wmd-l;
+    border: 0px;
+    padding: 10px 30px;
     border-radius: 10px;
     font-size: 16px;
     gap: 10px;
