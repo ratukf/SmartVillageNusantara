@@ -1,0 +1,13 @@
+.red-button {
+  background: linear-gradient(0deg, #E42313, #E42313);
+  border: 1px solid #961206;
+  box-shadow: 0px 4px 8px 0px #FF736C;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  gap: 10px;
+  width: 152px;
+}
+
+/*# sourceMappingURL=style.css.map */

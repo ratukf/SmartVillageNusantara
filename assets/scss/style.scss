@@ -1,0 +1,438 @@
+//-------------------- STYLE GUIDE ------------------------//
+
+// Import font 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Colors
+// Primary / RED
+$red: #E42313;
+$peach: #FF736C;
+$fanta: #FF3F2E;
+$maroon: #961206;
+
+// Neutral
+$black900: #212121;
+$black700: #5e5e5e;
+$black400: #a3a3a3;
+$gray100: #cfd8dc;
+$gray50: #eceff1;
+$graybg: #f5f5f9;
+$white: #FFFFFF;
+
+// Alert
+$info-color: #212121;
+$warning-color: #FEC001;
+$danger-color: #DE3E44;
+$success-color: #1BA345;
+
+// Typhography
+// Headlines
+@mixin h1 {
+    font-family: "Ubuntu";
+    font-size: 32;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black900;
+}
+
+h1 {
+    @include h1;
+}
+
+@mixin h2 {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black900;
+}
+
+h2 {
+    @include h2;
+}
+
+@mixin h2regular {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: regular;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black900;
+}
+
+.h2regular {
+    @include h2regular;
+}
+
+@mixin h3 {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black900;
+}
+
+h3 {
+    @include h3;
+}
+
+@mixin h4 {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black900;
+}
+
+h4 {
+    @include h4;
+}
+
+@mixin h5 {
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black700;
+}
+
+h5 {
+    @include h5;
+}
+
+@mixin subtitle {
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black900;
+}
+
+.subtitle {
+    @include subtitle;
+}
+
+@mixin headline-all-caps {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $black900;
+}
+
+.headline-all-caps {
+    @include headline-all-caps;
+}
+
+// Label / Medium
+@mixin label-wmd-xl { // Label weight medium 
+    font-family: "Ubuntu";
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 18px;
+    color: $black900;
+}
+
+.label-wmd-xl {
+    @include label-wmd-xl;
+}
+
+@mixin label-wmd-l {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 16px;
+    color: $black900;
+}
+
+.label-wmd-l {
+    @include label-wmd-l;
+}
+
+@mixin label-wmd-m {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 14px;
+    color: $black900;
+}
+
+.label-wmd-m {
+    @include label-wmd-m;
+}
+
+@mixin label-wmd-s {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 12px;
+    color: $black900;
+}
+
+.label-wmd-s {
+    @include label-wmd-s;
+}
+
+// Label / Regular 
+@mixin label-wr-xl {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 18px;
+    color: $black900;
+}
+
+.label-wr-xl {
+    @include label-wr-xl;
+}
+
+@mixin label-wr-l {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 16px;
+    color: $black900;
+}
+
+.label-wr-l {
+    @include label-wr-l;
+}
+
+@mixin label-wr-m {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 14px;
+    color: $black900;
+}
+
+.label-wr-m {
+    @include label-wr-m;
+}
+
+@mixin label-wr-s {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.25;
+    size: 12px;
+    color: $black900;
+}
+
+.label-wr-s {
+    @include label-wr-s;
+}
+
+// Body
+@mixin body-xl {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: normal;
+    size: 18px;
+    color: $black700;
+}
+
+.body-xl {
+    @include body-xl;
+}
+
+@mixin body-xl-bold {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: normal;
+    size: 18px;
+    color: $black700;
+}
+
+.body-xl-bold {
+    @include body-xl-bold;
+}
+
+@mixin body-l {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: normal;
+    size: 16px;
+    color: $black700;
+}
+
+.body-l {
+    @include body-l;
+}
+
+@mixin body-m {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: normal;
+    size: 14px;
+    color: $black400;
+}
+
+.body-m {
+    @include body-m;
+}
+
+@mixin body-s {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: normal;
+    size: 14px;
+}
+
+.body-s {
+    @include body-s;
+}
+
+// Caption & Overline
+@mixin caption {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+    size: 12px;
+}
+
+.caption {
+    @include caption;
+}
+
+@mixin caption-s {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+    size: 10px;
+}
+
+.caption-s {
+    @include caption;
+}
+
+@mixin caption-l {
+    font-family: 'Source Sans 3';
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    size: 12px;
+}
+
+.caption-l {
+    @include caption-l;
+}
+
+@mixin caption-m {
+    font-family: 'Source Sans 3';
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    size: 10px;
+}
+
+.caption-m {
+    @include caption-m;
+}
+
+@mixin overline {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5%;
+    size: 10px;
+}
+
+.overline {
+    @include overline;
+}
+
+// Image url assets
+$banner-image : url(../images/illustrations/banner2.png);
+$about-image : url(../images/illustrations/BGstatis.png);
+$keuntungan-image : url(../images/illustrations/BGlayanan.png);
+$solusi-image : url(../images/illustrations/BGsolusi.png);
+
+// Image size assets
+$about-icon : 62px;
+$icon-size : 40px;
+$picture-size : 56px;
+$logo-size: 50px;
+
+// 
+@mixin about-icon {
+    width: $about-icon;
+    height: $about-icon;
+}
+
+.about-icon {
+    @include about-icon;
+}
+
+// Pengaturan button
+.red-button {
+    background: linear-gradient(0deg, $red, $red);
+    border: 1px solid $maroon;
+    box-shadow: 0px 4px 8px 0px $peach;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    gap: 10px;
+    min-width: 152px;
+}
+
+.white-button {
+    background: $white;
+    border: 1px solid $red;
+    color: $red;
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    gap: 10px;
+    min-width: 152px;
+}
+
+// Pengaturan ukuran icon
+.icon {
+    width: $icon-size;
+    height: $icon-size;
+    margin-right: 20px;
+}
+
+.icon-big {
+    width: $icon-size * 2;
+    height: $icon-size * 2;
+}
+
+.picture {
+    width: $picture-size;
+    height: $picture-size;
+}
+
+.red-header, .red-subtitle {
+    color: $red;
+}
+
+.header {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}

@@ -1,0 +1,43 @@
+.red-button {
+  background: linear-gradient(0deg, #E42313, #E42313);
+  border: 1px solid #961206;
+  box-shadow: 0px 4px 8px 0px #FF736C;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  gap: 10px;
+  width: 152px;
+}
+
+.navbar {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.0901960784);
+}
+.navbar .logo {
+  max-height: 50px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Untuk menengahkan secara vertikal */
+  padding-inline-start: 0; /* Untuk menghapus padding default pada ul */
+}
+.navbar ul .nav-item {
+  display: flex;
+  align-items: center; /* Untuk menengahkan secara vertikal */
+  margin: 0 10px; /* Memberikan ruang di antara setiap item */
+}
+
+.banner {
+  background-image: url(../images/illustrations/banner2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 87vh;
+  text-align: left;
+}
+.banner h2, .banner p {
+  max-width: 500px;
+}
+
+/*# sourceMappingURL=index.css.map */

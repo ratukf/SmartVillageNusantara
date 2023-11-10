@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h1 {
+  font-family: "Ubuntu";
+  font-size: 32;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+h2 {
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+.h2regular {
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-weight: regular;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+h3 {
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+h4 {
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+h5 {
+  font-family: "Ubuntu";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #5e5e5e;
+}
+
+.subtitle {
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+.headline-all-caps {
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+.label-wmd-xl {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 18px;
+  color: #212121;
+}
+
+.label-wmd-l {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 16px;
+  color: #212121;
+}
+
+.label-wmd-m {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 14px;
+  color: #212121;
+}
+
+.label-wmd-s {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 12px;
+  color: #212121;
+}
+
+.label-wr-xl {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 18px;
+  color: #212121;
+}
+
+.label-wr-l {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 16px;
+  color: #212121;
+}
+
+.label-wr-m {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 14px;
+  color: #212121;
+}
+
+.label-wr-s {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.25;
+  size: 12px;
+  color: #212121;
+}
+
+.body-xl {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: normal;
+  size: 18px;
+  color: #5e5e5e;
+}
+
+.body-xl-bold {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: normal;
+  size: 18px;
+  color: #5e5e5e;
+}
+
+.body-l {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: normal;
+  size: 16px;
+  color: #5e5e5e;
+}
+
+.body-m {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: normal;
+  size: 14px;
+  color: #a3a3a3;
+}
+
+.body-s {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: normal;
+  size: 14px;
+}
+
+.caption {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  size: 12px;
+}
+
+.caption-s {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  size: 12px;
+}
+
+.caption-l {
+  font-family: "Source Sans 3";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  size: 12px;
+}
+
+.caption-m {
+  font-family: "Source Sans 3";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  size: 10px;
+}
+
+.overline {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5%;
+  size: 10px;
+}
+
+.about-icon {
+  width: 62px;
+  height: 62px;
+}
+
+.red-button {
+  background: linear-gradient(0deg, #E42313, #E42313);
+  border: 1px solid #961206;
+  box-shadow: 0px 4px 8px 0px #FF736C;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  gap: 10px;
+  min-width: 152px;
+}
+
+.white-button {
+  background: #FFFFFF;
+  border: 1px solid #E42313;
+  color: #E42313;
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  gap: 10px;
+  min-width: 152px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.icon-big {
+  width: 80px;
+  height: 80px;
+}
+
+.picture {
+  width: 56px;
+  height: 56px;
+}
+
+.red-header, .red-subtitle {
+  color: #E42313;
+}
+
+.header {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}/*# sourceMappingURL=style.css.map */
