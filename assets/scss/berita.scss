@@ -1,0 +1,33 @@
+@import 'style';
+
+.berita {
+    margin-top: 7rem;
+
+    .container {
+        .row {
+            .card {
+                border: 0px;
+
+                .card-body {
+                    background-color: $graybg;
+
+                    .big-thumbnail {
+                        max-width: 100%;
+                    }
+
+                    .small-thumbnail {
+                        height: 56px;
+                        width: 56px;
+                    }
+                }
+            }
+        }
+
+        .page-button {
+            img {
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+}
