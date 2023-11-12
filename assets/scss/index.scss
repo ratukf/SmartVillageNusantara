@@ -229,3 +229,24 @@ footer {
     }
 
 }
+
+.berita {
+    .header {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    .card {
+    border: 0px;
+        .card-body {
+            background-color: $graybg;
+            .big-thumbnail {
+                max-width: 100%;
+            }
+            .small-thumbnail {
+                height: 56px;
+                width: 56px;
+            }
+        }
+    }
+}
+
