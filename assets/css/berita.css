@@ -233,8 +233,6 @@ h5 {
   border: 1px solid #cfd8dc;
   padding: 0px 2px;
   border-radius: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .about-icon {
@@ -297,6 +295,40 @@ h5 {
   min-width: 152px;
 }
 
+.page-button-red {
+  width: 44px;
+  height: 44px;
+  padding: 9px, 0px, 8px, 0px;
+  border-radius: 10px;
+  border: 1px;
+  gap: 10px;
+  background-color: #E42313;
+  box-shadow: 0px 4px 8px 0px #FF736C;
+  border: 1px solid #961206;
+  color: #FFFFFF;
+}
+
+.page-button-gray {
+  width: 44px;
+  height: 44px;
+  padding: 9px, 0px, 8px, 0px;
+  border-radius: 10px;
+  border: 1px;
+  background-color: #f5f5f9;
+  border: 1px solid #cfd8dc;
+}
+
+.page-button-gray-2 {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px;
+  background-color: #f5f5f9;
+  color: #cfd8dc;
+  border: 1px solid #cfd8dc;
+}
+
 .icon {
   width: 40px;
   height: 40px;
@@ -325,6 +357,7 @@ h5 {
 
 .berita {
   margin-top: 7rem;
+  margin-bottom: 5rem;
 }
 .berita .container .row .card {
   border: 0px;

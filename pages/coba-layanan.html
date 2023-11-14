@@ -1,164 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coba Layanan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/coba-layanan.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/coba-layanan.css" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--    NAVBAR     -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
-        <div class="container col-md-10">
-            <a class="navbar-brand" href="../index.html">
-                <img class="logo" src="../assets/images/logos/smart_village_nusantara.png">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link label-wr-l" href="../index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link label-wr-l" href="layanan.html">Layanan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link label-wr-l" href="berita.html">Berita</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="red-button nav-link label-wmd-l" onclick="location.href='coba-layanan.html'">Coba
-                            Layanan</button>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+      id="navbar"
+    >
+      <div class="container col-md-10">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            class="logo"
+            src="../assets/images/logos/smart_village_nusantara.png"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link label-wr-l" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link label-wr-l" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link label-wr-l" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="red-button nav-link label-wmd-l"
+                onclick="location.href='coba-layanan.html'"
+              >
+                Coba Layanan
+              </button>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!--     CONTAINER FORM     -->
     <div class="container container-form rounded col-md-8 mb-5">
-        <form class="form py-5 px-4" id="biodata-form">
-            <div class="row mb-3">
-                <h3>Permintaan Coba Layanan</h3>
-                <p class="body-l">Isi secara lengkap dan akurat data desa Anda.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="nama" class="mb-2">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="nama" placeholder="Nama Anda" required>
-                    <span id="name-error-message" class="text-danger my-2"></span>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="no" class="mb-2">No telepon</label>
-                    <input type="text" class="form-control" id="no" placeholder="No. telepon" required>
-                    <div id="error-message" class="text-danger my-2"></div>
-                    <span id="no-error-message" class="text-danger my-2"></span>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="email" class="mb-2">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="Email anda" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="provinsi" class="mb-2">Provinsi</label>
-                    <select name="provinsi" id="provinsi" class="form-select" required>
-                        <option value="" disabled selected>Pilih Provinsi</option>
-                        <option value="jawa_barat">Jawa Barat</option>
-                        <option value="jawa_tengah">Jawa Tengah</option>
-                        <option value="jawa_timur">Jawa Timur</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="kabupatenKota" class="mb-2">Kabupaten/Kota</label>
-                    <select name="kabupatenKota" id="kabupatenKota" class="form-select" required>
-                        <option value="" disabled selected>Pilih Kabupaten/Kota</option>
-                        <option value="kab_bandung">Kabupaten Bandung</option>
-                        <option value="kota_bandung">Kota Bandung</option>
-                        <option value="kota_yogyakarta">Kota Yogyakarta</option>
-                        <option value="kota_surabaya">Kota Surabaya</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="kecamatan" class="mb-2">Kecamatan</label>
-                    <select name="kecamatan" id="kecamatan" class="form-select" required>
-                        <option value="" disabled selected>Pilih Kecamatan</option>
-                        <option value="gedebage">Gedebage</option>
-                        <option value="arcamanik">Arcamanik</option>
-                        <option value="bojongsoang">Bojongsoang</option>
-                        <option value="ciwastra">Ciwastra</option>
-                        <option value="rancasari">Rancasari</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="namaDesa" class="mb-2">Nama Desa</label>
-                    <input type="text" class="form-control" id="namaDesa" placeholder="Nama desa" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="alamatDesa" class="mb-2">Alamat desa</label>
-                    <textarea class="form-control" rows="4" id="alamatDesa" placeholder="Alamat desa" required></textarea>
-                </div>
-            </div>
-            <button type="submit" class="red-button btn-primary mt-5 d-flex justify-content-end">Selanjutnya</button>
-        </form>
+      <form class="form py-5 px-4" id="biodata-form">
+        <div class="row mb-3">
+          <h3>Permintaan Coba Layanan</h3>
+          <p class="body-l">Isi secara lengkap dan akurat data desa Anda.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="nama" class="mb-2">Nama Lengkap</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nama"
+              placeholder="Nama Anda"
+              required
+            />
+            <span id="name-error-message" class="text-danger my-2"></span>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="no" class="mb-2">No telepon</label>
+            <input
+              type="text"
+              class="form-control"
+              id="no"
+              placeholder="No. telepon"
+              required
+            />
+            <div id="error-message" class="text-danger my-2"></div>
+            <span id="no-error-message" class="text-danger my-2"></span>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="mb-2">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Email anda"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="provinsi" class="mb-2">Provinsi</label>
+            <select name="provinsi" id="provinsi" class="form-select" required>
+              <option value="" disabled selected>Pilih Provinsi</option>
+              <option value="jawa_barat">Jawa Barat</option>
+              <option value="jawa_tengah">Jawa Tengah</option>
+              <option value="jawa_timur">Jawa Timur</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="kabupatenKota" class="mb-2">Kabupaten/Kota</label>
+            <select
+              name="kabupatenKota"
+              id="kabupatenKota"
+              class="form-select"
+              required
+            >
+              <option value="" disabled selected>Pilih Kabupaten/Kota</option>
+              <option value="kab_bandung">Kabupaten Bandung</option>
+              <option value="kota_bandung">Kota Bandung</option>
+              <option value="kota_yogyakarta">Kota Yogyakarta</option>
+              <option value="kota_surabaya">Kota Surabaya</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="kecamatan" class="mb-2">Kecamatan</label>
+            <select
+              name="kecamatan"
+              id="kecamatan"
+              class="form-select"
+              required
+            >
+              <option value="" disabled selected>Pilih Kecamatan</option>
+              <option value="gedebage">Gedebage</option>
+              <option value="arcamanik">Arcamanik</option>
+              <option value="bojongsoang">Bojongsoang</option>
+              <option value="ciwastra">Ciwastra</option>
+              <option value="rancasari">Rancasari</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="namaDesa" class="mb-2">Nama Desa</label>
+            <input
+              type="text"
+              class="form-control"
+              id="namaDesa"
+              placeholder="Nama desa"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="alamatDesa" class="mb-2">Alamat desa</label>
+            <textarea
+              class="form-control"
+              rows="4"
+              id="alamatDesa"
+              placeholder="Alamat desa"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="red-button btn-primary mt-5 d-flex justify-content-end"
+        >
+          Selanjutnya
+        </button>
+      </form>
     </div>
 
     <!--     FOOTER     -->
     <footer class="footer" id="footer">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class=" col-md-11">
-                    <div class="row d-flex justify-content-between align-items-center pt-5">
-                        <div class="col-md-5 d-flex flex-md-row flex-column">
-                            <div class="mb-3 mb-md-0">
-                                <img src="../assets/images/logos/smart_city_nusantara.png" alt="Smart City Nusantara">
-                            </div>
-                            <div>
-                                <h5 style="color: #ffffff">Telkom Living Lab Smart City Nusantara</h5>
-                                <p class="body-m" style="color: #ffffff">Jl. Gunung Sahari Raya No. 53, Jakarta
-                                    Pusat<br>Living Lab Smart City Nusantara</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <p class="label-wmd-xl" style="color: #ffffff">Contact Us</p>
-                            <p class="body-m" style="color: #ffffff">support@svntelkom.com</p>
-                            <p class="body-m" style="color: #ffffff">021 - 5555 6666</p>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-11">
+            <div
+              class="row d-flex justify-content-between align-items-center pt-5"
+            >
+              <div class="col-md-5 d-flex flex-md-row flex-column">
+                <div class="mb-3 mb-md-0">
+                  <img
+                    src="../assets/images/logos/smart_city_nusantara.png"
+                    alt="Smart City Nusantara"
+                  />
                 </div>
+                <div>
+                  <h5 style="color: #ffffff">
+                    Telkom Living Lab Smart City Nusantara
+                  </h5>
+                  <p class="body-m" style="color: #ffffff">
+                    Jl. Gunung Sahari Raya No. 53, Jakarta Pusat<br />Living Lab
+                    Smart City Nusantara
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-2 mb-3">
+                <p class="label-wmd-xl" style="color: #ffffff">Contact Us</p>
+                <p class="body-m" style="color: #ffffff">
+                  support@svntelkom.com
+                </p>
+                <p class="body-m" style="color: #ffffff">021 - 5555 6666</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!--     COPYRIGHT     -->
-    <div class="copyright d-flex align-items-center justify-content-center" style="height: 40px;">
-        <p class="label-wr-s mb-0" style="color: #ffffff">&copy; 2020, Smart Village Nusantara. Hak Cipta Dilindungi</p>
+    <div
+      class="copyright d-flex align-items-center justify-content-center"
+      style="height: 40px"
+    >
+      <p class="label-wr-s mb-0" style="color: #ffffff">
+        &copy; 2020, Smart Village Nusantara. Hak Cipta Dilindungi
+      </p>
     </div>
-
-    <!--     WHATSAPP     -->
-    <div class="whatsapp-button" id="whatsapp-button">
-        <a class="d-flex flex-column align-items-end" href="https://wa.me/6282215158981" target="_blank">
-            <span class="label-wr-l mb-4">Butuh bantuan?</span>
-            <div class="icon-container d-flex position-relative align-items-center">
-                <div class="icon-bg"></div>
-                <div class="ellipse-1">
-                    <div class="ellipse-2"></div>
-                </div>
-                <img class="whatsapp-icon" src="../assets/images/icons/whatsapp.png" alt="WhatsApp Icon">
-            </div>
-        </a>
-    </div>
-
 
     <!--    JAVASCRIPT     -->
     <script src="../assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
