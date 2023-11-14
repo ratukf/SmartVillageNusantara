@@ -186,6 +186,7 @@ h5 {
   line-height: 150%;
   letter-spacing: normal;
   size: 14px;
+  color: #5e5e5e;
 }
 
 .caption {
@@ -226,6 +227,14 @@ h5 {
   line-height: normal;
   letter-spacing: 5%;
   size: 10px;
+}
+
+.news-tag {
+  border: 1px solid #cfd8dc;
+  padding: 0px 2px;
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .about-icon {

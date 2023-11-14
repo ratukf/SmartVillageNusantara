@@ -233,8 +233,6 @@ h5 {
   border: 1px solid #cfd8dc;
   padding: 0px 2px;
   border-radius: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .about-icon {

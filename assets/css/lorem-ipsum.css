@@ -233,8 +233,6 @@ h5 {
   border: 1px solid #cfd8dc;
   padding: 0px 2px;
   border-radius: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .about-icon {
@@ -323,15 +321,18 @@ h5 {
   padding-bottom: 75px;
 }
 
-.container-form {
-  background-color: #f5f5f9;
-  margin-top: 8rem;
+.berita {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
-
-.modal-content {
-  background-color: #f5f5f9;
+.berita .container .row .col-md-9 .judul .news-tag {
+  margin-left: 10px;
 }
-.modal-content img {
-  width: 180px;
-  height: 180px;
-}/*# sourceMappingURL=uji-coba-layanan.css.map */
+.berita .container .row .col-md-9 .share-sosmed img {
+  width: 24px;
+  height: 24px;
+}
+.berita .container .row .col-md-9 .berita-lainnya .col-md-12 .col-md-4 img {
+  width: 100%;
+  padding: 10px 0px;
+}/*# sourceMappingURL=lorem-ipsum.css.map */

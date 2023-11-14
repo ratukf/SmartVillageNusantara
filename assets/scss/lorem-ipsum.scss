@@ -1,0 +1,33 @@
+@import 'style';
+
+.berita {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    .container {
+        .row {
+            .col-md-9 {
+                .judul {
+                    .news-tag {
+                        margin-left: 10px;
+                    }
+                }
+                .share-sosmed {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                .berita-lainnya {
+                    .col-md-12 {
+                        .col-md-4 {
+                            img {
+                                width: 100%;
+                                padding: 10px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
